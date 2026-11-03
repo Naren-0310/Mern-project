@@ -1,0 +1,24 @@
+{
+  "name": "hireconnect",
+  "version": "1.0.0",
+  "description": "HireConnect — Modern MERN-Stack Recruitment Platform",
+  "scripts": {
+    "dev": "node -e \"console.log('Run \\\"npm run dev:backend\\\" in one terminal and \\\"npm run dev:frontend\\\" in another terminal.')\"",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix backend start",
+    "test": "npm --prefix backend test && npm --prefix frontend test",
+    "test:backend": "npm --prefix backend test",
+    "test:frontend": "npm --prefix frontend test",
+    "test:acceptance": "node scripts/run_acceptance_tests.js",
+    "test:security": "node scripts/test_security_audit_controls.js",
+    "test:persistence": "node scripts/test_user_persistence.js",
+    "test:storage": "node scripts/test_storage_persistence.js",
+    "db:indexes": "npm --prefix backend run db:indexes",
+    "bootstrap:admin": "npm --prefix backend run bootstrap:admin",
+    "worker:reminders": "npm --prefix backend run worker:reminders"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
